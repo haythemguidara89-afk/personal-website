@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haythem Guidara | Graphic Designer, Video Editor and UI/UX Designer</title>
+<meta name="description" content="Haythem Guidara is a Graphic Designer, Video Editor and UI/UX Designer based in Tunisia, working worldwide. Personal portfolio, career and selected work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --lime:#C8FF00;
+    --ink:#111111;
+    --body:#3D3D3D;
+    --grey:#737373;
+    --line:#E8E6DF;
+    --cream:#F7F6F1;
+    --white:#FFFFFF;
+    --radius:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--white);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;font-size:16px}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  .serif{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.02em}
+  /* Header, Baha style: quiet, thin line, small nav */
+  header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.02em}
+  .logo-mark{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-size:13px;font-weight:800;letter-spacing:.02em}
+  .nav-links{display:flex;gap:30px;font-size:14px;font-weight:600;color:var(--body)}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cta{background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:700;transition:.18s ease}
+  .nav-cta:hover{background:#000}
+  /* Hero */
+  .hero{padding:84px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--body)}
+  .dot{width:8px;height:8px;border-radius:50%;background:#22C55E}
+  h1{font-family:Fraunces,Georgia,serif;font-size:clamp(52px,7.5vw,84px);line-height:.98;letter-spacing:-.03em;font-weight:600;margin:20px 0 6px}
+  h1 i{font-style:italic;font-weight:500}
+  .hero-role{font-family:Fraunces,Georgia,serif;font-size:clamp(22px,3vw,30px);line-height:1.25;font-weight:500;color:var(--ink)}
+  .hero-role u{text-decoration:none;border-bottom:3px solid var(--lime);padding-bottom:1px}
+  .hero-text{color:var(--body);font-size:17px;max-width:540px;margin-top:18px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 14px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid var(--ink);transition:.18s ease}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:var(--lime);color:var(--ink);border-color:var(--ink)}
+  .btn-light{background:#fff;color:var(--ink)}
+  .btn-light:hover{background:var(--cream)}
+  .btn-lime{background:var(--lime);color:var(--ink)}
+  .btn-lime:hover{background:#B8F000}
+  .contact-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .contact-row a{font-size:14px;font-weight:600;color:var(--body);border-bottom:1px solid var(--line);padding-bottom:2px;transition:.15s ease}
+  .contact-row a:hover{color:var(--ink);border-color:var(--ink)}
+  .contact-row a strong{color:var(--ink)}
+  /* Avatar, clean Baha style: cream circle, thin border, no heavy shadow */
+  .avatar-wrap{position:relative}
+  .avatar-card{background:var(--cream);border:1px solid var(--line);border-radius:28px;padding:22px}
+  .avatar-svg, .avatar-img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:20px;background:#FBFAF6;border:1px solid var(--line)}
+  .avatar-caption{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-size:14px}
+  .avatar-caption b{font-weight:700}
+  .avatar-caption span{color:var(--grey)}
+  .avatar-toggle-btn{background:var(--white);color:var(--ink);border:1px solid var(--line);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;transition:.18s ease}
+  .avatar-toggle-btn:hover{background:var(--ink);color:var(--lime);border-color:var(--ink)}
+  .float-chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.07);z-index:2}
+  .chip-1{top:12px;right:-8px}
+  .chip-2{bottom:74px;left:-12px}
+  /* Facts strip */
+  .facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .facts div b{font-family:Fraunces,Georgia,serif;font-size:28px;font-weight:600;display:block;line-height:1.1}
+  .facts div span{font-size:13px;color:var(--grey);font-weight:600}
+  /* Sections, Baha style: small label, large serif heading, generous space */
+  section{padding:76px 0}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+  h2{font-family:Fraunces,Georgia,serif;font-size:clamp(34px,4.5vw,48px);line-height:1.08;letter-spacing:-.02em;font-weight:600;margin:10px 0 12px}
+  h2 i{font-style:italic;font-weight:500}
+  .section-intro{color:var(--body);max-width:620px;font-size:17px}
+  .section-head{margin-bottom:32px}
+  /* Work */
+  .work-list{display:flex;flex-direction:column;gap:18px}
+  .work-card{display:grid;grid-template-columns:220px 1fr;gap:28px;border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:#fff;transition:.18s ease;align-items:stretch}
+  .work-card:hover{border-color:var(--ink);box-shadow:0 10px 30px rgba(0,0,0,.05)}
+  .work-visual{border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--line);background:var(--cream);min-height:240px;height:100%}
+  .work-visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+  .work-card:hover .work-visual img{transform:scale(1.05)}
+  .work-client{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+  .work-card h3{font-family:Fraunces,Georgia,serif;font-size:26px;line-height:1.2;letter-spacing:-.01em;font-weight:600;margin:6px 0 8px}
+  .work-card p{color:var(--body);font-size:15px;max-width:620px}
+  .work-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  .work-facts div{border-top:1px solid var(--line);padding-top:10px}
+  .work-facts b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:3px}
+  .work-facts span{font-weight:600;font-size:14px;line-height:1.4}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600}
+  .work-link{margin-top:16px;font-weight:700;display:inline-block;border-bottom:2px solid var(--lime);padding-bottom:1px}
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:28px}
+  .step{padding:24px 20px 4px 0;border-right:1px solid var(--line);margin-right:20px}
+  .step:last-child{border-right:0;margin-right:0}
+  .step b{font-family:Fraunces,Georgia,serif;font-size:22px;color:var(--grey);font-weight:500}
+  .step h3{font-size:17px;margin:12px 0 6px}
+  .step p{color:var(--body);font-size:14px}
+  /* Experience timeline, like Baha */
+  .timeline{border-top:1px solid var(--line);margin-top:8px}
+  .job{display:grid;grid-template-columns:180px 1fr auto;gap:24px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}
+  .job-date{font-weight:700;font-size:14px;color:var(--grey)}
+  .job h3{font-family:Fraunces,Georgia,serif;font-size:22px;letter-spacing:-.01em;font-weight:600}
+  .job .company{font-weight:700;margin-top:2px}
+  .job .company span{color:var(--grey);font-weight:500}
+  .job p{color:var(--body);margin-top:8px;max-width:640px;font-size:15px}
+  .job .place{font-size:12px;font-weight:700;background:var(--cream);border:1px solid var(--line);padding:6px 11px;border-radius:999px;white-space:nowrap}
+  .earlier{margin-top:24px;color:var(--body);font-size:15px}
+  .earlier a{font-weight:700;border-bottom:2px solid var(--lime)}
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .about-text p{font-size:17px;color:var(--body);margin-bottom:16px}
+  .about-text p strong{color:var(--ink)}
+  .about-text p mark{background:var(--lime);padding:0 3px;color:var(--ink)}
+  .explore{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}
+  .explore h3{font-size:15px;margin-bottom:12px}
+  .side-card{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--cream)}
+  .side-card h3{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:600;margin-bottom:10px}
+  .side-card p{color:var(--body);font-size:15px;margin-bottom:14px}
+  /* Skills */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .skill{border:1px solid var(--line);border-radius:16px;padding:24px}
+  .skill h3{font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;margin-bottom:4px}
+  .skill p{color:var(--grey);font-size:13px;font-weight:600;margin-bottom:14px}
+  /* Education */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .edu{border:1px solid var(--line);border-radius:16px;padding:24px}
+  .edu h3{font-family:Fraunces,Georgia,serif;font-size:21px;font-weight:600;margin:8px 0 6px}
+  .edu p{color:var(--body);font-size:15px}
+  /* Portfolio CTA */
+  .portfolio-cta{border:1px solid var(--line);border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:28px;background:var(--cream)}
+  .portfolio-cta h3{font-family:Fraunces,Georgia,serif;font-size:28px;line-height:1.15;font-weight:600}
+  .portfolio-cta p{color:var(--body);margin-top:8px;max-width:520px}
+  /* Contact */
+  .contact-box{text-align:center;max-width:680px;margin:0 auto}
+  .contact-box .btn{margin:4px}
+  .contact-meta{margin-top:26px;color:var(--grey);font-size:14px;line-height:1.8}
+  .contact-meta strong{color:var(--ink)}
+  footer{border-top:1px solid var(--line);padding:32px 0 44px;color:var(--grey);font-size:14px}
+  .footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  @media(max-width:860px){
+    .hero-grid,.about-grid,.two-col{grid-template-columns:1fr}
+    .skills-grid{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .step{border-right:0}
+    .work-card{grid-template-columns:1fr}
+    .work-visual{min-height:220px;max-height:280px}
+    .job{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .hero{padding:56px 0 48px}
+    section{padding:56px 0}
+    .facts{grid-template-columns:1fr 1fr}
+    .portfolio-cta{flex-direction:column;align-items:flex-start}
+  }
+  @media(max-width:520px){.skills-grid,.steps{grid-template-columns:1fr}.work-facts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="logo-mark">HG</span> Haythem Guidara</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Contact me</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Available immediately</span>
+        <h1>Haythem<br><i>Guidara.</i></h1>
+        <p class="hero-role">Graphic Designer, Video Editor <u>and UI/UX Designer.</u></p>
+        <p class="hero-text">I turn ideas into visuals people actually watch. Design, video and motion for brands and creators, from the first brief to the published post.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">View portfolio ↗</a>
+          <a class="btn btn-light" href="#contact">Contact me ↓</a>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:haythem.guidaraa@gmail.com">Email: <strong>haythem.guidaraa@gmail.com</strong></a>
+          <a href="https://wa.me/21652899940" target="_blank" rel="noopener">WhatsApp: <strong>+216 52 899 940</strong></a>
+        </div>
+        <div class="contact-row" style="margin-top:12px">
+          <a href="https://www.linkedin.com/in/haythemguidara" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">Behance ↗</a>
+          <a href="https://www.upwork.com/freelancers/~015192061d872c8061" target="_blank" rel="noopener">Upwork ↗</a>
+        </div>
+      </div>
+
+      <div class="avatar-wrap">
+        <span class="float-chip chip-1">▶ Reels that convert</span>
+        <span class="float-chip chip-2">✦ Design and motion</span>
+        <div class="avatar-card">
+          <img id="avatarImage" src="avatar.png" onerror="this.onerror=null;this.src='photo.jpg';" alt="Haythem Guidara" class="avatar-img" style="cursor:pointer;" title="Click to toggle between cartoon and photo">
+          <div class="avatar-caption">
+            <div>
+              <b id="avatarName">Haythem, cartoon version</b><br>
+              <span id="avatarSub">Design • Video • Motion</span>
+            </div>
+            <button type="button" id="toggleAvatarBtn" class="avatar-toggle-btn">Switch to photo ↺</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" style="margin-top:56px">
+      <div class="facts">
+        <div><b>7+ years</b><span>Freelance and agency</span></div>
+        <div><b>Since 2019</b><span>Designing and editing</span></div>
+        <div><b>24 projects</b><span>On Behance</span></div>
+        <div><b>3 languages</b><span>Arabic, English, French</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SELECTED WORK, personal work only -->
+  <section id="work" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Selected work</p>
+        <h2>Work that moved <i>real numbers.</i></h2>
+        <p class="section-intro">Personal work from my roles and freelance projects. The full set, 24 projects, lives on Behance.</p>
+      </div>
+
+      <div class="work-list">
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="work-bd.jpg" alt="BD Select Daily Video & Motion Graphics Showcase" loading="lazy">
+          </div>
+          <div>
+            <p class="work-client">BD Select · Agency</p>
+            <h3>Daily video that lifted Instagram interactions by 45%</h3>
+            <p>Daily video content and animations, plus high-performing visuals for paid campaigns.</p>
+            <div class="work-facts">
+              <div><b>My role</b><span>Graphic Designer / Video Editor</span></div>
+              <div><b>Result</b><span>+45% interactions, +10K followers in 2 months</span></div>
+              <div><b>Challenge</b><span>Daily output, fast turnaround, paid ready</span></div>
+              <div><b>Focus</b><span>Short-form video, animation, ads creative</span></div>
+            </div>
+            <div class="tags"><span>Short-form video</span><span>Motion graphics</span><span>Paid social</span><span>Remote</span></div>
+            <a class="work-link" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">See it on Behance ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="work-kudra.jpg" alt="Kudra Brand & Product Content Showcase" loading="lazy">
+          </div>
+          <div>
+            <p class="work-client">kudra · Brand and product content</p>
+            <h3>100+ visuals and reels that doubled reach in 2 months</h3>
+            <p>Branded visuals and product-focused reels, aligned with KPI driven campaigns and the marketing team.</p>
+            <div class="work-facts">
+              <div><b>My role</b><span>Graphic Designer / Video Editor</span></div>
+              <div><b>Result</b><span>Reach x2, engagement +60%</span></div>
+              <div><b>Challenge</b><span>Volume without losing brand consistency</span></div>
+              <div><b>Focus</b><span>Product reels, motion, campaigns</span></div>
+            </div>
+            <div class="tags"><span>Motion design</span><span>Product reels</span><span>Branding</span><span>Social media</span></div>
+            <a class="work-link" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">See it on Behance ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="work-yassir.jpg" alt="Yassir 2D Animation & Super App Showcase" loading="lazy">
+          </div>
+          <div>
+            <p class="work-client">Yassir · App and product</p>
+            <h3>2D animation that lifted video views by 50%</h3>
+            <p>Animated content tailored to social platforms, plus branded visuals for product updates across multiple countries.</p>
+            <div class="work-facts">
+              <div><b>My role</b><span>Graphic Designer / Video Editor</span></div>
+              <div><b>Result</b><span>Video views +50%</span></div>
+              <div><b>Challenge</b><span>Localised, platform specific design</span></div>
+              <div><b>Focus</b><span>2D animation, product visuals, social</span></div>
+            </div>
+            <div class="tags"><span>2D animation</span><span>Product visuals</span><span>Social media</span></div>
+            <a class="work-link" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">See it on Behance ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="work-xiaomi.jpg" alt="Xiaomi Product Launch & Brand Visuals Showcase" loading="lazy">
+          </div>
+          <div>
+            <p class="work-client">Xiaomi · Labs Rebrand · Food and Beverage</p>
+            <h3>Product launches, rebrands and food content that sells</h3>
+            <p>Launch visuals, rebrand systems and food and beverage posts, built for feeds, stories and ads.</p>
+            <div class="work-facts">
+              <div><b>My role</b><span>Graphic Designer / Video Editor</span></div>
+              <div><b>Result</b><span>Launch ready kits, consistent brand systems</span></div>
+              <div><b>Challenge</b><span>One brand, many formats, one look</span></div>
+              <div><b>Focus</b><span>Brand identity, product visuals, reels</span></div>
+            </div>
+            <div class="tags"><span>Branding</span><span>Product design</span><span>Reels</span><span>Social media</span></div>
+            <a class="work-link" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">See it on Behance ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio-cta" style="margin-top:22px">
+        <div>
+          <h3>Want the full picture?</h3>
+          <p>24 projects on Behance, from brand identity and social design to reels, motion and UI/UX.</p>
+        </div>
+        <a class="btn btn-dark" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">View full portfolio ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker">How I work</p>
+      <h2>From the first brief <i>to the published post.</i></h2>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Start with the right story</h3><p>Understand the audience, the goal and the platform before drawing anything.</p></div>
+        <div class="step"><b>02</b><h3>Design the look</h3><p>Identity, layout and visuals that fit the brand and stop the scroll.</p></div>
+        <div class="step"><b>03</b><h3>Edit and animate</h3><p>Cut, motion, sound and captions, built for Reels, TikTok and YouTube.</p></div>
+        <div class="step"><b>04</b><h3>Publish and measure</h3><p>Deliver in every format needed, then learn from views, saves and clicks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker">Professional experience</p>
+      <h2>Creative work <i>since 2019.</i></h2>
+      <p class="section-intro" style="margin-bottom:28px">My work has grown from freelance design to agency video, motion and UI/UX, in Tunisia, Canada and remote worldwide.</p>
+
+      <div class="timeline">
+        <div class="job">
+          <span class="job-date">Nov 2025 – Present</span>
+          <div><h3>Graphic Designer / Video Editor</h3><p class="company">ORA Agency <span>· Canada, remote</span></p><p>Social and web visuals, plus video editing for all platforms to boost engagement and showcase brand services.</p></div>
+          <span class="place">Remote</span>
+        </div>
+        <div class="job">
+          <span class="job-date">Apr 2024 – Sep 2025</span>
+          <div><h3>Graphic Designer / Video Editor</h3><p class="company">BD Select <span>· Worldwide, remote</span></p><p>Daily video and animations, +45% Instagram interactions, 30% faster design turnaround, +10K followers in 2 months.</p></div>
+          <span class="place">Remote</span>
+        </div>
+        <div class="job">
+          <span class="job-date">Oct 2023 – Feb 2024</span>
+          <div><h3>Graphic Designer / Video Editor</h3><p class="company">kudra <span>· Tunisia, remote</span></p><p>100+ branded visuals and product reels, reach doubled in 2 months, engagement +60%.</p></div>
+          <span class="place">Remote</span>
+        </div>
+        <div class="job">
+          <span class="job-date">Sep 2023 – Nov 2023</span>
+          <div><h3>Graphic Designer / Video Editor</h3><p class="company">Yassir <span>· Tunisia, on site</span></p><p>2D animated content for social platforms, video views +50%, branded visuals across multiple countries.</p></div>
+          <span class="place">On site</span>
+        </div>
+        <div class="job">
+          <span class="job-date">Aug 2023 – Sep 2023</span>
+          <div><h3>Graphic Designer / UI/UX Designer</h3><p class="company">alea <span>· Remote</span></p><p>UI redesign of 5 landing pages, bounce rate down 25%, 15+ responsive interfaces for international clients.</p></div>
+          <span class="place">Remote</span>
+        </div>
+      </div>
+
+      <p class="earlier"><strong>Earlier work, 2019 to 2023:</strong> Freelance since June 2019, plus Brazilian Glow, 3alla9ni, Old World Timber and MID MIC. Community management, content calendars, music videos and reels, with follower and engagement growth on every account. <a href="https://www.linkedin.com/in/haythemguidara" target="_blank" rel="noopener">View full profile on LinkedIn ↗</a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="padding-top:0">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="kicker">About</p>
+          <h2>Design grounded in <i>video, motion and taste.</i></h2>
+          <p>I am Haythem Guidara, a graphic designer, video editor and UI/UX designer based in El Mourouj, Tunis. I started freelancing in <mark>June 2019</mark>, then worked with agencies and brands in Tunisia, Canada and worldwide.</p>
+          <p>I am most engaged by work that sits between <strong>story, design and motion</strong>: the first three seconds of a reel, the look of a brand, and the edit that makes people stay to the end.</p>
+          <p>Today I am open to a full time role worldwide, remote and on site, plus freelance projects.</p>
+          <div class="explore">
+            <h3>Currently exploring</h3>
+            <div class="tags"><span>AI video tools, incl. Higgsfield</span><span>Short-form storytelling</span><span>DaVinci Resolve</span><span>Motion design</span><span>UI/UX and Figma</span><span>Reels and TikTok strategy</span></div>
+          </div>
+        </div>
+        <div class="side-card">
+          <h3>Inside my creative lab</h3>
+          <p>Outside client work, I test new AI video tools, edit styles and hooks, and turn what works into better cuts and templates. It keeps the craft close at hand.</p>
+          <div class="tags"><span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span><span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>CapCut</span><span>Canva</span></div>
+          <div style="margin-top:20px;border-top:1px solid var(--line);padding-top:18px">
+            <p style="margin-bottom:10px"><strong>Education</strong></p>
+            <p style="font-size:14px">Master's in Graphic Design, 2022 to 2024<br>Bachelor's in Audiovisual Design, 2019 to 2022<br>Higher Institute of Design Sciences and Technologies, Manouba</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker">Creative expertise</p>
+      <h2>What I do <i>best.</i></h2>
+      <div class="skills-grid" style="margin-top:28px">
+        <div class="skill"><h3>Video editing</h3><p>Short-form, reels, motion</p><div class="tags"><span>Short-form video</span><span>Reels and TikTok</span><span>Motion graphics</span><span>DaVinci Resolve</span><span>Premiere Pro</span><span>After Effects</span></div></div>
+        <div class="skill"><h3>Graphic design</h3><p>Brand and social, print and digital</p><div class="tags"><span>Brand identity</span><span>Social media design</span><span>Posters and ads</span><span>Photoshop</span><span>Illustrator</span><span>Lightroom</span></div></div>
+        <div class="skill"><h3>UI/UX design</h3><p>Web, landing pages, product</p><div class="tags"><span>Figma</span><span>Landing pages</span><span>Web design</span><span>Responsive layouts</span><span>User flows</span></div></div>
+        <div class="skill"><h3>Content and social</h3><p>Strategy, calendars, community</p><div class="tags"><span>Content creation</span><span>Community management</span><span>Content calendars</span><span>Hooks and captions</span></div></div>
+        <div class="skill"><h3>AI video</h3><p>Faster ideas, better cuts</p><div class="tags"><span>Higgsfield</span><span>AI video tools</span><span>AI assisted editing</span><span>Rapid prototyping</span></div></div>
+        <div class="skill"><h3>Shooting</h3><p>Photo and video, on location</p><div class="tags"><span>Photo shooting</span><span>Video shooting</span><span>Product films</span><span>Food and lifestyle</span></div></div>
+      </div>
+
+      <div class="two-col" style="margin-top:16px">
+        <div class="edu">
+          <p class="kicker">Education</p>
+          <h3>Master's in Graphic Design</h3>
+          <p>Higher Institute of Design Sciences and Technologies, Manouba · 2022 to 2024</p>
+          <h3 style="margin-top:18px">Bachelor's in Audiovisual Design</h3>
+          <p>Higher Institute of Design Sciences and Technologies, Manouba · 2019 to 2022</p>
+        </div>
+        <div class="edu">
+          <p class="kicker">Languages</p>
+          <h3>Arabic, English, French</h3>
+          <p>Arabic native · English C1 Advanced · French fluent. I work in all three, with content in Arabic, French and English.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-box">
+        <p class="kicker">Let's work together</p>
+        <h2>Have a role, a brand <i>or a reel in mind?</i></h2>
+        <p class="section-intro" style="margin:0 auto 26px">I am available immediately, for a full time role worldwide, remote and on site, and for freelance projects. Send me the brief, I will reply fast with ideas and a timeline.</p>
+        <div>
+          <a class="btn btn-dark" href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener">View portfolio ↗</a>
+          <a class="btn btn-lime" href="mailto:haythem.guidaraa@gmail.com">Email me</a>
+          <a class="btn btn-light" href="https://wa.me/21652899940" target="_blank" rel="noopener">WhatsApp me</a>
+        </div>
+        <p class="contact-meta">
+          <strong>haythem.guidaraa@gmail.com</strong> · <strong>+216 52 899 940</strong><br>
+          El Mourouj, Ben Arous, Tunisia · Open worldwide, remote and on site<br>
+          <a href="https://www.behance.net/guidarahaythem" target="_blank" rel="noopener" style="font-weight:700;border-bottom:2px solid var(--lime)">Behance</a> · <a href="https://www.linkedin.com/in/haythemguidara" target="_blank" rel="noopener" style="font-weight:700;border-bottom:2px solid var(--lime)">LinkedIn</a> · <a href="https://www.upwork.com/freelancers/~015192061d872c8061" target="_blank" rel="noopener" style="font-weight:700;border-bottom:2px solid var(--lime)">Upwork</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>© 2026 Haythem Guidara · Graphic Designer, Video Editor and UI/UX Designer</span>
+    <span>Personal portfolio · Inspired by bahachammakhi.tn</span>
+  </div>
+</footer>
+
+<script>
+  const avatarImg = document.getElementById('avatarImage');
+  const avatarName = document.getElementById('avatarName');
+  const toggleBtn = document.getElementById('toggleAvatarBtn');
+  let isCartoon = true;
+
+  function toggleAvatar() {
+    isCartoon = !isCartoon;
+    if (isCartoon) {
+      avatarImg.src = 'avatar.png';
+      avatarName.textContent = 'Haythem, cartoon version';
+      toggleBtn.textContent = 'Switch to photo ↺';
+    } else {
+      avatarImg.src = 'photo.jpg';
+      avatarName.textContent = 'Haythem Guidara';
+      toggleBtn.textContent = 'Switch to cartoon ↺';
+    }
+  }
+
+  if (toggleBtn) toggleBtn.addEventListener('click', toggleAvatar);
+  if (avatarImg) avatarImg.addEventListener('click', toggleAvatar);
+</script>
+
+</body>
+</html>
